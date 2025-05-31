@@ -1,7 +1,7 @@
-import React from "react";
+
 import styled from "styled-components";
 
-import { Link } from "../../../../components/Link";
+import { Link } from "../../../components/Link";
 
 export type TabStatusType = "all" | "landing" | "react" | "spa";
 

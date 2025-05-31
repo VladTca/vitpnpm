@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { FlexWrapper } from "../../../components/FlexWrapper";
-import { theme } from "../../../styles/Theme";
-import { Button } from "../../../components/Button";
-import { Link } from "../../../components/Link";
+import { FlexWrapper } from "../../components/FlexWrapper";
+import { theme } from "../../styles/Theme";
+import { Button } from "../../components/Button";
+import { Link } from "../../components/Link";
 
 const Works = styled.section`
   position: relative;

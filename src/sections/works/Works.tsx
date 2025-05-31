@@ -1,11 +1,11 @@
 import React from "react";
-import { SectionTitle } from "../../../components/SectionTitle";
-import { TabMenu, TabStatusType } from "./tabMenu/TabMenu";
-import { FlexWrapper } from "../../../components/FlexWrapper";
+import { SectionTitle } from "../../components/SectionTitle";
+import { TabMenu, type TabStatusType } from "./tabMenu/TabMenu";
+import { FlexWrapper } from "../../components/FlexWrapper";
 import { Work } from "./work/Work";
 import socialImg from "../../../assets/images/social-network.png";
 import timerImg from "../../../assets/images/timer.jpg";
-import { Container } from "../../../components/Container";
+import { Container } from "../../components/Container";
 import { S } from "./Works_Styles";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -110,7 +110,7 @@ export const Works: React.FC = () => {
           wrap={"wrap"}
         >
           <AnimatePresence>
-            {filteredWorks.map((w, index) => {
+            {filteredWorks.map((w) => {
               return (
                 <motion.div
                   style={{ width: "400px", flexGrow: 1, maxWidth: "540px" }}

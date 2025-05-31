@@ -5,16 +5,16 @@ import {S} from "./Footer_Styles";
 
 const SocialItemsData = [
   {
-    iconID: "instagram",
+    iconID: "linkedin",
+  },
+  {
+    iconID: "whatsapp",
   },
   {
     iconID: "telegram",
   },
   {
-    iconID: "vk",
-  },
-  {
-    iconID: "linkedin",
+    iconID: "email",
   },
 ];
 

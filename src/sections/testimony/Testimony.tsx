@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { SectionTitle } from "../../../components/SectionTitle";
-import { Icon } from "../../../components/icon/Icon";
-import { Slider } from "../../../components/slider/Slider";
-import { FlexWrapper } from "../../../components/FlexWrapper";
-import { Container } from "../../../components/Container";
+import { SectionTitle } from "../../components/SectionTitle";
+import { Icon } from "../../components/icon/Icon";
+import { Slider } from "../../components/slider/Slider";
+import { FlexWrapper } from "../../components/FlexWrapper";
+import { Container } from "../../components/Container";
 // import {IconWrapper} from "../skills/skill/Skill";
 import { S } from "../skills/Skills_Styles";
 

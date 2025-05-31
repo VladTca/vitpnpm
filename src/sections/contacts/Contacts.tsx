@@ -1,7 +1,7 @@
-import React, { ElementRef, useRef } from "react";
-import { SectionTitle } from "../../../components/SectionTitle";
-import { Button } from "../../../components/Button";
-import { Container } from "../../../components/Container";
+import React, {type ElementRef, useRef } from "react";
+import { SectionTitle } from "../../components/SectionTitle";
+import { Button } from "../../components/Button";
+import { Container } from "../../components/Container";
 import { S } from "./Contact_Styles";
 import emailjs from "@emailjs/browser";
 
