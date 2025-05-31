@@ -4,7 +4,7 @@ import {theme} from "../../styles/Theme.ts";
 const Header = styled.header`
     background-color: rgba(31, 31, 32, 0.9);
     width: 100%;
-    padding: 20px 0;
+    padding:  0;
     position: sticky;
     top: 0;
     left: 0;

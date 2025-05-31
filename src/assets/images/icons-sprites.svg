@@ -100,6 +100,32 @@
             <path d="M10 15L25 27L40 15" stroke="currentColor" stroke-width="2" fill="currentColor"/>
         </g>
     </symbol>
+    <symbol id="logo" viewBox="0 0 100 100">
+        <!-- Буква V -->
+        <g>
+        <g transform="scale(1.1) translate(-7.5, -7.5)">
+        <path
+                d="M 20,20 L 50,80 L 80,20"
+                fill="none"
+                stroke="white"
+                stroke-width="6"
+
+        />
+        </g>
+        <!-- Буква T -->
+        <g transform="scale(1.5) translate(-7.5, -2.5)">
+        <path
+                d="M 30,20 H 70 M 50,20 V 80"
+                fill="none"
+                stroke="#7572D5"
+                stroke-width="6"
+        />
+        </g>
+        </g>
+    </symbol>
+
+
+
 
     <g id="vk">
         <path id="Vector"
