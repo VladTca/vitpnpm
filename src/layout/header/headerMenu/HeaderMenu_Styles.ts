@@ -70,7 +70,7 @@ const NavLink = styled(Link)`
 
 const MobileMenu = styled.nav``;
 
-const BurgerButton = styled.button<{ isOpen: boolean }>`
+const BurgerButton = styled.button<{ $isOpen: boolean }>`
   position: fixed;
   width: 200px;
   height: 200px;
@@ -88,8 +88,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     bottom: 50px;
 
     ${(props) =>
-      props.isOpen &&
-      css<{ isOpen: boolean }>`
+      props.$isOpen &&
+      css<{ $isOpen: boolean }>`
         background-color: rgba(255, 255, 255, 0);
       `}
     &::before {
@@ -102,8 +102,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       transform: translateY(-10px);
 
       ${(props) =>
-        props.isOpen &&
-        css<{ isOpen: boolean }>`
+        props.$isOpen &&
+        css<{ $isOpen: boolean }>`
           transform: rotate(-45deg) translateY(0);
         `}
     }
@@ -118,8 +118,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       transform: translateY(10px);
 
       ${(props) =>
-        props.isOpen &&
-        css<{ isOpen: boolean }>`
+        props.$isOpen &&
+        css<{ $isOpen: boolean }>`
           transform: rotate(45deg) translateY(0);
           width: 36px;
         `}
@@ -127,7 +127,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   }
 `;
 
-const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
+const MobileMenuPopup = styled.div<{ $isOpen: boolean }>`
   position: fixed;
   top: 0;
   left: 0;
@@ -151,8 +151,8 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   }
 
   ${(props) =>
-    props.isOpen &&
-    css<{ isOpen: boolean }>`
+    props.$isOpen &&
+    css<{ $isOpen: boolean }>`
       transform: translateY(0);
       & ul {
         gap: 30px;

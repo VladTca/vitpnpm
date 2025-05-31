@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Menu } from "../menu/Menu";
-import { S } from "../HeaderMenu_Styles";
+import React, {useState} from "react";
+import {Menu} from "../menu/Menu";
+import {S} from "../HeaderMenu_Styles";
 
 export const MobileMenu: React.FC = () => {
   const [menuIsOpen, setmenuIsOpen] = useState(false);
@@ -10,12 +10,12 @@ export const MobileMenu: React.FC = () => {
 
   return (
     <S.MobileMenu>
-      <S.BurgerButton isOpen={menuIsOpen} onClick={onBurgerBtnClick}>
+      <S.BurgerButton $isOpen={menuIsOpen} onClick={onBurgerBtnClick}>
         <span></span>
       </S.BurgerButton>
 
       <S.MobileMenuPopup
-        isOpen={menuIsOpen}
+        $isOpen={menuIsOpen}
         onClick={() => {
           setmenuIsOpen(false);
         }}
