@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import { theme } from "../../styles/Theme"
+import {theme} from "../../styles/Theme";
+import {font} from "../../styles/Common";
+
 
 const Contacts = styled.section`
   position: relative;
@@ -42,5 +44,15 @@ const Field = styled.input`
     outline: 1px solid ${theme.colors.borderColor};
   }
 `;
+const Description = styled.p`
+  text-align: center;
+    padding-bottom: 40px;
+    ${font};
+`;
 
-export const S = { Contacts, Form, Field };
+export const S = {
+  Contacts,
+  Form,
+  Field,
+  Description,
+};

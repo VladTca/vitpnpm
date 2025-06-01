@@ -9,7 +9,7 @@ export const SectionTitle = styled.h2`
     letter-spacing: 3px;
     text-align: center;
     position: relative;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
     
     
     &::before{

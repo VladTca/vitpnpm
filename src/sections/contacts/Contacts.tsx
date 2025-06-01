@@ -36,6 +36,7 @@ export const Contacts: React.FC = () => {
     <S.Contacts id={"contacts"}>
       <Container>
         <SectionTitle>Contact</SectionTitle>
+        <S.Description>You can contact me by simply filling out the form and by pressing the Send button - and I will receive your message to my email.</S.Description>
         <S.Form ref={form} onSubmit={sendEmail}>
           <S.Field required name={"user_name"} placeholder={"name"} />
           <S.Field required name={"email"} placeholder={"email"} />
