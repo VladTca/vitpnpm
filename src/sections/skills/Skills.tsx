@@ -1,26 +1,26 @@
-import { FlexWrapper } from "../../components/FlexWrapper";
-import { SectionTitle } from "../../components/SectionTitle";
-import { Skill } from "./skill/Skill";
-import { Container } from "../../components/Container";
-import { S } from "./Skills_Styles";
-import { Fade } from "react-awesome-reveal";
+import {FlexWrapper} from "../../components/FlexWrapper";
+import {SectionTitle} from "../../components/SectionTitle";
+import {Skill} from "./skill/Skill";
+import {Container} from "../../components/Container";
+import {S} from "./Skills_Styles";
+import {Fade} from "react-awesome-reveal";
 
 const skillData = [
   {
-    iconId: "code",
-    title: "HTML5",
+    iconId: "html",
+    title: "HTML",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
   },
   {
     iconId: "css3",
-    title: "Css3",
+    title: "CSS",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
   },
   {
-    iconId: "react",
-    title: "React",
+    iconId: "js",
+    title: "JavaScript",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
   },
@@ -31,6 +31,55 @@ const skillData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
   },
   {
+    iconId: "react",
+    title: "React",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  },
+  {
+    iconId: "redux",
+    title: "Redux",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  },
+  {
+    iconId: "tailwind",
+    title: "Tailwind",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  },
+  {
+    iconId: "bootstrap",
+    title: "Bootstrap",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  },
+  {
+    iconId: "java",
+    title: "JAVA",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  },
+  {
+    iconId: "spring",
+    title: "Spring",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  },
+{
+    iconId: "postgres",
+    title: "PostgresSQL",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  },
+{
+    iconId: "mongo",
+    title: "MongoDB",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  },
+
+  {
     iconId: "styledComponentsIcon",
     title: "Styled Components",
     description:
@@ -38,10 +87,32 @@ const skillData = [
   },
   {
     iconId: "figma",
-    title: "WEB design",
+    title: "Figma",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
   },
+  {
+    iconId: "webstorm",
+    title: "Webstorm",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  }, {
+    iconId: "vscode",
+    title: "VS Code",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  }, {
+    iconId: "git",
+    title: "GIT",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  }, {
+    iconId: "github",
+    title: "GitHub",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+  },
+
 ];
 
 export const Skills = () => {
