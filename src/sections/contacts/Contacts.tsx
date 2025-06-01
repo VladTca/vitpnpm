@@ -1,15 +1,16 @@
-import React, {type ElementRef, useRef} from "react";
+import React, {useRef} from "react";
 import {SectionTitle} from "../../components/SectionTitle";
 import {Button} from "../../components/Button";
 import {Container} from "../../components/Container";
 import {S} from "./Contact_Styles";
 import emailjs from "@emailjs/browser";
 
-export const Contacts: React.FC = () => {
-  const form = useRef<ElementRef<"form">>(null);
+//TODO: После отправки написать алерт если успешно отправлено
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>
-  ) => {
+export const Contacts: React.FC = () => {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!form.current) {
@@ -18,7 +19,7 @@ export const Contacts: React.FC = () => {
 
     emailjs
       .sendForm("service_zv37svi", "template_mbc2t2h", form.current, {
-        publicKey: "pyhBXyn8SW3gN6mwJ",
+        publicKey: import.meta.env.VITE_KEY_EMAIL_EMAILJS || "#",
       })
       .then(
         () => {
