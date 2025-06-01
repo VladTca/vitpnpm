@@ -1,14 +1,15 @@
-import React, {type ElementRef, useRef } from "react";
-import { SectionTitle } from "../../components/SectionTitle";
-import { Button } from "../../components/Button";
-import { Container } from "../../components/Container";
-import { S } from "./Contact_Styles";
+import React, {type ElementRef, useRef} from "react";
+import {SectionTitle} from "../../components/SectionTitle";
+import {Button} from "../../components/Button";
+import {Container} from "../../components/Container";
+import {S} from "./Contact_Styles";
 import emailjs from "@emailjs/browser";
 
-export const Contact: React.FC = () => {
+export const Contacts: React.FC = () => {
   const form = useRef<ElementRef<"form">>(null);
 
-  const sendEmail = (e: any) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>
+  ) => {
     e.preventDefault();
 
     if (!form.current) {
@@ -27,7 +28,7 @@ export const Contact: React.FC = () => {
           console.log("FAILED...", error.text);
         },
       );
-    e.target.reset();
+    (e.target as HTMLFormElement).reset();
   };
 
   return (

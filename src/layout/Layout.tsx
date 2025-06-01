@@ -9,7 +9,7 @@ export default function Layout() {
     <FlexWrapper direction={"column"} align={"center"}>
       {/*<header className={styles.header}>*/}
       {/*  {navLinks.map((el, index) => (*/}
-      {/*    <NavLink*/}
+      {/*    <Nav♦Link*/}
       {/*      key={index}*/}
       {/*      className={({ isActive }) => (isActive ? styles.isActive : "")}*/}
       {/*      to={el.to}*/}

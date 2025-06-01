@@ -47,7 +47,7 @@ export const Particl = () => {
           },
           modes: {
             push: {
-              quantity: 4,
+              quantity: 8,
             },
             repulse: {
               distance: 200,
@@ -57,10 +57,10 @@ export const Particl = () => {
         },
         particles: {
           color: {
-            value: "#216522",
+            value: "#18c618",
           },
           links: {
-            color: "#467046",
+            color: "#1bb51e",
             distance: 200,
             enable: true,
             opacity: 0.5,
@@ -84,7 +84,7 @@ export const Particl = () => {
             value: 50,
           },
           opacity: {
-            value: 0.2,
+            value: 0.5,
           },
           shape: {
             type: "circle",

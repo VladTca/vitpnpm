@@ -1,8 +1,11 @@
 import './App.css';
 import {HashRouter, Route, Routes} from "react-router";
 import Layout from "./layout/Layout.tsx";
-import Lesson01 from "./layout/lesson01/Lesson01.tsx";
 import {Main} from "./sections/main/Main.tsx";
+import {Skills} from "./sections/skills/Skills.tsx";
+import {Works} from "./sections/works/Works.tsx";
+import {Testimony} from "./sections/testimony/Testimony.tsx";
+import {Contacts} from "./sections/contacts/Contacts.tsx";
 
 
 const routes = [
@@ -11,9 +14,21 @@ const routes = [
         element: <Main />
     },
     {
-        path: 'lesson01',
-        element: <Lesson01 />
+        path: 'skills',
+        element: <Skills />
     },
+    {
+        path: 'works',
+        element: <Works />
+    },
+    {
+        path: 'Testimony',
+        element: <Testimony />
+    },
+    {
+        path: 'contacts',
+        element: <Contacts />
+    }
 
 ];
 
