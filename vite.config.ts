@@ -10,7 +10,7 @@ export default defineConfig({
         plugins: ['babel-plugin-styled-components'],
       },
     }),
-    visualizer({ open: true }) // Открыть анализ в браузере
+    visualizer({ open: false }) // Открыть анализ в браузере
 
   ],
   build: {
