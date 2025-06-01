@@ -8,6 +8,7 @@ export const theme = {
 
     borderColor: "#4A4A4A",
     placeholderColor: "#495057",
+
   },
 
   media: {

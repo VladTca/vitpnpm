@@ -6,6 +6,9 @@ import {S} from "./Main_Styles";
 import Tilt from "react-parallax-tilt";
 import {Particl} from "../../components/particl/Particl.tsx";
 
+//TODO: при возврате на домой на 5 сек слоган  с таймером
+
+
 export const Main: React.FC = () => {
   return (
     <S.Main id={"home"}>

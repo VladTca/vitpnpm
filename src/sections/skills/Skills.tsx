@@ -5,112 +5,115 @@ import {Container} from "../../components/Container";
 import {S} from "./Skills_Styles";
 import {Fade} from "react-awesome-reveal";
 
+
+//TODO: уменьшить задержку, выровнять картинки
+
 const skillData = [
   {
     iconId: "html",
     title: "HTML",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "Markup language for creating web pages and applications, providing the structure and content of websites.",
   },
   {
     iconId: "css3",
     title: "CSS",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "Styling language used to control the presentation and layout of HTML documents, making websites visually appealing.",
   },
   {
     iconId: "js",
     title: "JavaScript",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "Programming language that enables interactive web pages and is an essential part of web applications.",
   },
   {
     iconId: "typeScript",
     title: "TypeScript",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "Superset of JavaScript that adds static typing, enhancing code quality and developer productivity.",
   },
   {
     iconId: "react",
     title: "React",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "JavaScript library for building user interfaces, particularly single-page applications with reusable components.",
   },
   {
     iconId: "redux",
     title: "Redux",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "State management library for JavaScript applications, commonly used with React for predictable state updates.",
   },
   {
     iconId: "tailwind",
     title: "Tailwind",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "Utility-first CSS framework for rapidly building custom user interfaces with pre-defined classes.",
   },
   {
     iconId: "bootstrap",
     title: "Bootstrap",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "Popular CSS framework for developing responsive and mobile-first websites with pre-designed components.",
   },
   {
     iconId: "java",
     title: "JAVA",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "Object-oriented programming language used for building enterprise-level applications and Android development.",
   },
   {
     iconId: "spring",
     title: "Spring",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "Java framework that provides comprehensive infrastructure support for developing robust Java applications.",
   },
 {
     iconId: "postgres",
     title: "PostgresSQL",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "Powerful, open-source object-relational database system with strong reputation for reliability and data integrity.",
   },
 {
     iconId: "mongo",
     title: "MongoDB",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "NoSQL database that uses JSON-like documents with optional schemas, offering high performance and scalability.",
   },
 
   {
     iconId: "styledComponentsIcon",
     title: "Styled Components",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "Library for React that allows writing CSS in JavaScript, enabling component-scoped styling.",
   },
   {
     iconId: "figma",
     title: "Figma",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "Cloud-based design tool for collaborative interface design, prototyping, and design systems.",
   },
   {
     iconId: "webstorm",
     title: "Webstorm",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "Integrated development environment for JavaScript and related technologies, with intelligent coding assistance.",
   }, {
     iconId: "vscode",
-    title: "VS Code",
+    title: "VSCode",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "Lightweight but powerful source code editor with extensive ecosystem of extensions for various languages.",
   }, {
     iconId: "git",
     title: "GIT",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "Distributed version control system for tracking changes in source code during software development.",
   }, {
     iconId: "github",
     title: "GitHub",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+      "Web-based platform for version control and collaboration that enables developers to work together on projects.",
   },
 
 ];
