@@ -6,6 +6,7 @@ import {Skills} from "./sections/skills/Skills.tsx";
 import {Works} from "./sections/works/Works.tsx";
 import {Testimony} from "./sections/testimony/Testimony.tsx";
 import {Contacts} from "./sections/contacts/Contacts.tsx";
+import NoPage from "./components/NoPage.tsx";
 
 
 const routes = [
@@ -41,6 +42,7 @@ function App() {
                             {routes.map(route => (
                                 <Route key={route.path} path={route.path} element={route.element} />
                             ))}
+                            <Route path="*" element={<NoPage />}/>
                         </Route>
                     </Routes>
                 </HashRouter>
