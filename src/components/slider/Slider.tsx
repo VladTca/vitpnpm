@@ -1,7 +1,6 @@
-
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import { S } from "./Slider_Styles";
+import {S} from "./Slider_Styles";
 import "./../../styles/Slider.css";
 
 type SlidePropsType = {
@@ -17,27 +16,18 @@ const Slide = (props: SlidePropsType) => {
     </S.Slide>
   );
 };
+const SLIDE_TEXTS =
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
 
-const items = [
-  <Slide
-    text={
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    }
-    userName={"ivan ivanow"}
-  />,
-  <Slide
-    text={
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    }
-    userName={"petr petrov"}
-  />,
-  <Slide
-    text={
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    }
-    userName={"igor igorev"}
-  />,
+const slides = [
+  { id: 1, text: SLIDE_TEXTS, userName: "ivan ivanow" },
+  { id: 2, text: SLIDE_TEXTS, userName: "petr petrov" },
+  { id: 3, text: SLIDE_TEXTS, userName: "igor igorev" },
 ];
+
+const items = slides.map(({ id, text, userName }) => (
+  <Slide key={id} text={text} userName={userName} />
+));
 
 export const Slider = () => (
   <S.Slider>

@@ -5,6 +5,7 @@ import {Container} from "../../components/Container.ts";
 import {S} from "./Main_Styles";
 import Tilt from "react-parallax-tilt";
 import {Particl} from "../../components/particl/Particl.tsx";
+import React from "react";
 
 //TODO: при возврате на домой на 5 сек слоган  с таймером
 

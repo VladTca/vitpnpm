@@ -4,21 +4,11 @@ import {Footer} from "./footer/Footer";
 import {FlexWrapper} from "../components/FlexWrapper";
 import {Header} from "./header/Header.tsx";
 
+
 export default function Layout() {
   return (
     <FlexWrapper direction={"column"} align={"center"}>
-      {/*<header className={styles.header}>*/}
-      {/*  {navLinks.map((el, index) => (*/}
-      {/*    <Nav♦Link*/}
-      {/*      key={index}*/}
-      {/*      className={({ isActive }) => (isActive ? styles.isActive : "")}*/}
-      {/*      to={el.to}*/}
-      {/*    >*/}
-      {/*      {el.title}*/}
-      {/*    </NavLink>*/}
-      {/*  ))}*/}
-      {/*</header>*/}
-        <Header />
+      <Header />
       <main className={styles.main}>
         <Outlet />
       </main>
