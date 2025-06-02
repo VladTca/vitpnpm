@@ -6,6 +6,7 @@ import {SectionTitle} from "../../components/SectionTitle";
 import {Button} from "../../components/Button";
 import {Container} from "../../components/Container";
 import {S} from "./Contact_Styles";
+import {useTranslation} from "react-i18next";
 
 const validationSchema = Yup.object({
   user_name: Yup.string().required("Name is required"),
@@ -17,6 +18,7 @@ const validationSchema = Yup.object({
 });
 
 export const Contacts: React.FC = () => {
+    const {t}=useTranslation();
   const sendEmail = async (
     values: {
       user_name: string;
@@ -44,10 +46,9 @@ export const Contacts: React.FC = () => {
   return (
     <S.Contacts id="contacts">
       <Container>
-        <SectionTitle>Contact</SectionTitle>
+        <SectionTitle>{t('contacts')}</SectionTitle>
         <S.Description>
-          You can contact me by simply filling out the form and by pressing the
-          Send button - and I will receive your message to my email.
+            {t('contactDescription')}
         </S.Description>
         <Formik
           initialValues={{
@@ -65,7 +66,7 @@ export const Contacts: React.FC = () => {
                 as={S.Field}
                 type="text"
                 name="user_name"
-                placeholder="Name"
+                placeholder={t('name')}
               />
               <ErrorMessage name="user_name" component={S.ErrorMessage} />
 
@@ -73,7 +74,7 @@ export const Contacts: React.FC = () => {
                 as={S.Field}
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder={t('email')}
               />
               <ErrorMessage name="email" component={S.ErrorMessage} />
 
@@ -81,11 +82,11 @@ export const Contacts: React.FC = () => {
                 as={S.Field}
                 type="text"
                 name="subject"
-                placeholder="Subject"
+                placeholder={t('subject')}
               />
               <ErrorMessage name="subject" component={S.ErrorMessage} />
 
-              <Field as={S.Textarea} name="message" placeholder="Message" />
+              <Field as={S.Textarea} name="message" placeholder={t('message')} />
               <ErrorMessage name="message" component={S.ErrorMessage} />
 
               <Button
@@ -93,7 +94,7 @@ export const Contacts: React.FC = () => {
                 disabled={isSubmitting}
                 style={{ marginTop: "16px" }}
               >
-                Send message
+                  {t('sendMessage')}
               </Button>
             </S.Form>
           )}
