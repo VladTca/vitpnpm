@@ -1,6 +1,6 @@
 import styled, {css} from "styled-components";
 import {theme} from "../../../styles/Theme";
-import {Link} from "react-router";
+import {Link} from "react-router-dom";
 
 // Menu.tsx
 const MenuItem = styled.li`

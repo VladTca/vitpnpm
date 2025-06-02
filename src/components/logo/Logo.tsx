@@ -1,6 +1,6 @@
 import React from "react";
 import {Icon} from "../icon/Icon";
-import {Link} from "react-router";
+import {Link} from "react-router-dom";
 
 
 export const Logo: React.FC = () => {

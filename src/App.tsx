@@ -1,6 +1,6 @@
 import './App.css';
 import {useEffect, useState} from "react";
-import {HashRouter, Route, Routes, useNavigate} from "react-router";
+import {HashRouter, Route, Routes, useNavigate} from "react-router-dom";
 import Layout from "./layout/Layout.tsx";
 import {Skills} from "./sections/skills/Skills.tsx";
 import {Works} from "./sections/works/Works.tsx";

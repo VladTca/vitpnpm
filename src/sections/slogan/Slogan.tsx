@@ -4,7 +4,7 @@ import {SectionTitle} from "../../components/SectionTitle";
 import {Button} from "../../components/Button";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
-import {Link} from "react-router";
+import {Link} from "react-router-dom";
 
 export const Slogan: React.FC = () => {
     const [count, setCount] = useState(3);

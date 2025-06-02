@@ -1,4 +1,4 @@
-import {Outlet} from "react-router";
+import {Outlet} from "react-router-dom";
 import styles from "./Layout.module.css";
 import {Footer} from "./footer/Footer";
 import {FlexWrapper} from "../components/FlexWrapper";

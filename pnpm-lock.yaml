@@ -47,6 +47,9 @@ importers:
       react-router:
         specifier: ^7.6.1
         version: 7.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react-router-dom:
+        specifier: ^7.6.1
+        version: 7.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react-scroll:
         specifier: ^1.9.3
         version: 1.9.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -1782,6 +1785,13 @@ packages:
   react-refresh@0.17.0:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
     engines: {node: '>=0.10.0'}
+
+  react-router-dom@7.6.1:
+    resolution: {integrity: sha512-vxU7ei//UfPYQ3iZvHuO1D/5fX3/JOqhNTbRR+WjSBWxf9bIvpWK+ftjmdfJHzPOuMQKe2fiEdG+dZX6E8uUpA==}
+    engines: {node: '>=20.0.0'}
+    peerDependencies:
+      react: '>=18'
+      react-dom: '>=18'
 
   react-router@7.6.1:
     resolution: {integrity: sha512-hPJXXxHJZEsPFNVbtATH7+MMX43UDeOauz+EAU4cgqTn7ojdI9qQORqS8Z0qmDlL1TclO/6jLRYUEtbWidtdHQ==}
@@ -4108,6 +4118,12 @@ snapshots:
       react-dom: 19.1.0(react@19.1.0)
 
   react-refresh@0.17.0: {}
+
+  react-router-dom@7.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      react-router: 7.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
 
   react-router@7.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
