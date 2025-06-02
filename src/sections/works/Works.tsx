@@ -10,7 +10,6 @@ import useTabItems from "./TabsItems.tsx";
 import {useTranslation} from "react-i18next";
 import useWorkData from "./WorksData.tsx";
 
-
 export const Works: React.FC = () => {
   const { t } = useTranslation();
   const worksData = useWorkData();
@@ -35,7 +34,7 @@ export const Works: React.FC = () => {
   return (
     <S.Works id={"works"}>
       <Container>
-        <SectionTitle>{t('myprojects')}</SectionTitle>
+        <SectionTitle>{t("myprojects")}</SectionTitle>
 
         <TabMenu
           tabsItems={tabsItems}
@@ -59,12 +58,13 @@ export const Works: React.FC = () => {
                   key={w.id}
                 >
                   <Work
-                      key={w.id}
-                      title={w.title}
-                      text={w.text}
-                      src={w.src}
-                      dhref={w.dhref}
-                      chref={w.chref}/>
+                    key={w.id}
+                    title={w.title}
+                    text={w.text}
+                    src={w.src}
+                    dhref={w.dhref}
+                    chref={w.chref}
+                  />
                 </motion.div>
               );
             })}

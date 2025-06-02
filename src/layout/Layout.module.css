@@ -31,11 +31,11 @@ header a:hover {
 
 .isActive {
   background-color: white;
-  color: #D56118;
+  color: #d56118;
   padding: 5px 9px;
   border-radius: 10px;
 }
 
 .isActive:hover {
-  color: #D56118;
+  color: #d56118;
 }

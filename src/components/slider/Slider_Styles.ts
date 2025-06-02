@@ -1,4 +1,4 @@
-import {theme} from "../../styles/Theme";
+import { theme } from "../../styles/Theme";
 import styled from "styled-components";
 
 const Slider = styled.div`
@@ -7,7 +7,6 @@ const Slider = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 `;
 
 const Slide = styled.div`

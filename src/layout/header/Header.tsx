@@ -1,11 +1,11 @@
-import {Logo} from "../../components/logo/Logo";
-import {Container} from "../../components/Container";
-import {FlexWrapper} from "../../components/FlexWrapper";
-import {DesktopMenu} from "./headerMenu/desktopmenu/DesktopMenu";
-import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
-import {S} from "./Header_Styles";
+import { Logo } from "../../components/logo/Logo";
+import { Container } from "../../components/Container";
+import { FlexWrapper } from "../../components/FlexWrapper";
+import { DesktopMenu } from "./headerMenu/desktopmenu/DesktopMenu";
+import { MobileMenu } from "./headerMenu/mobileMenu/MobileMenu";
+import { S } from "./Header_Styles";
 import React from "react";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import LanguageSwitcher from "../../components/languageSwitch/LanguageSwitcher.tsx";
 
 export const Header: React.FC = () => {
@@ -23,7 +23,6 @@ export const Header: React.FC = () => {
     navigate("/slogan");
   };
 
-
   return (
     <S.Header>
       <Container>
@@ -32,7 +31,7 @@ export const Header: React.FC = () => {
             <Logo />
           </div>
           {width < breakpoint ? <MobileMenu /> : <DesktopMenu />}
-          <LanguageSwitcher/>
+          <LanguageSwitcher />
         </FlexWrapper>
       </Container>
     </S.Header>

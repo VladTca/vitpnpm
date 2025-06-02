@@ -15,7 +15,6 @@ const Form = styled.form`
   align-items: center;
   gap: 16px;
   margin: 0 auto;
-  
 
   textarea {
     resize: none;

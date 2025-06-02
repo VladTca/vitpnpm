@@ -4,7 +4,6 @@ import {Footer} from "./footer/Footer";
 import {FlexWrapper} from "../components/FlexWrapper";
 import {Header} from "./header/Header.tsx";
 
-
 export default function Layout() {
   return (
     <FlexWrapper direction={"column"} align={"center"}>

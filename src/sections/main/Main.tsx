@@ -1,13 +1,12 @@
 import Typewriter from "typewriter-effect";
 import photo from "../../assets/images/mf1.jpg";
-import {FlexWrapper} from "../../components/FlexWrapper.tsx";
-import {Container} from "../../components/Container.ts";
-import {S} from "./Main_Styles";
+import { FlexWrapper } from "../../components/FlexWrapper.tsx";
+import { Container } from "../../components/Container.ts";
+import { S } from "./Main_Styles";
 import Tilt from "react-parallax-tilt";
-import {Particl} from "../../components/particl/Particl.tsx";
+import { Particl } from "../../components/particl/Particl.tsx";
 import React from "react";
-import {useTranslation} from "react-i18next";
-
+import { useTranslation } from "react-i18next";
 
 export const Main: React.FC = () => {
   const { t } = useTranslation();
@@ -18,23 +17,23 @@ export const Main: React.FC = () => {
         <Particl />
         <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"}>
           <div>
-            <S.SmallText>{t('welcome')}</S.SmallText>
+            <S.SmallText>{t("welcome")}</S.SmallText>
             <S.Name>
-              {t('iam')} <span>Vladimir Tcaciuc</span>
+              {t("iam")} <span>Vladimir Tcaciuc</span>
             </S.Name>
             <S.MainTitle>
               <p>Full Stack Developer.</p>
               <Typewriter
                 options={{
                   strings: [
-                    t('spec1'),
-                    t('spec2'),
-                    t('spec3'),
-                    t('spec4'),
-                    t('spec5'),
-                    t('spec6'),
-                    t('spec7'),
-                    t('spec8'),
+                    t("spec1"),
+                    t("spec2"),
+                    t("spec3"),
+                    t("spec4"),
+                    t("spec5"),
+                    t("spec6"),
+                    t("spec7"),
+                    t("spec8"),
                   ],
                   autoStart: true,
                   loop: true,

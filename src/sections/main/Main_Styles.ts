@@ -7,7 +7,6 @@ const Main = styled.section`
   background-color: #fff5e7;
   display: flex;
   box-sizing: border-box;
-
 `;
 
 const Photo = styled.img`

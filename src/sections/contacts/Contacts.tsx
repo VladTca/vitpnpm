@@ -9,17 +9,18 @@ import {S} from "./Contact_Styles";
 import {useTranslation} from "react-i18next";
 import type {TFunction} from "i18next";
 
-const validationSchema = (t: TFunction) => Yup.object({
-  user_name: Yup.string().required(t("nameRequired", "Name is required")),
-  email: Yup.string()
-    .email(t("invalidEmail", "Invalid email address"))
-    .required(t("emailRequired", "Email is required")),
-  subject: Yup.string().required(t("subjectRequired", "Subject is required")),
-  message: Yup.string().required(t("messageRequired", "Message is required")),
-});
+const validationSchema = (t: TFunction) =>
+  Yup.object({
+    user_name: Yup.string().required(t("nameRequired", "Name is required")),
+    email: Yup.string()
+      .email(t("invalidEmail", "Invalid email address"))
+      .required(t("emailRequired", "Email is required")),
+    subject: Yup.string().required(t("subjectRequired", "Subject is required")),
+    message: Yup.string().required(t("messageRequired", "Message is required")),
+  });
 
 export const Contacts: React.FC = () => {
-    const {t}=useTranslation();
+  const { t } = useTranslation();
   const sendEmail = async (
     values: {
       user_name: string;
@@ -47,10 +48,8 @@ export const Contacts: React.FC = () => {
   return (
     <S.Contacts id="contacts">
       <Container>
-        <SectionTitle>{t('contacts')}</SectionTitle>
-        <S.Description>
-            {t('contactDescription')}
-        </S.Description>
+        <SectionTitle>{t("contacts")}</SectionTitle>
+        <S.Description>{t("contactDescription")}</S.Description>
         <Formik
           initialValues={{
             user_name: "",
@@ -67,7 +66,7 @@ export const Contacts: React.FC = () => {
                 as={S.Field}
                 type="text"
                 name="user_name"
-                placeholder={t('name')}
+                placeholder={t("name")}
               />
               <ErrorMessage name="user_name" component={S.ErrorMessage} />
 
@@ -75,7 +74,7 @@ export const Contacts: React.FC = () => {
                 as={S.Field}
                 type="email"
                 name="email"
-                placeholder={t('email')}
+                placeholder={t("email")}
               />
               <ErrorMessage name="email" component={S.ErrorMessage} />
 
@@ -83,11 +82,15 @@ export const Contacts: React.FC = () => {
                 as={S.Field}
                 type="text"
                 name="subject"
-                placeholder={t('subject')}
+                placeholder={t("subject")}
               />
               <ErrorMessage name="subject" component={S.ErrorMessage} />
 
-              <Field as={S.Textarea} name="message" placeholder={t('message')} />
+              <Field
+                as={S.Textarea}
+                name="message"
+                placeholder={t("message")}
+              />
               <ErrorMessage name="message" component={S.ErrorMessage} />
 
               <Button
@@ -95,7 +98,7 @@ export const Contacts: React.FC = () => {
                 disabled={isSubmitting}
                 style={{ marginTop: "16px" }}
               >
-                  {t('sendMessage')}
+                {t("sendMessage")}
               </Button>
             </S.Form>
           )}
