@@ -7,14 +7,15 @@ import {Button} from "../../components/Button";
 import {Container} from "../../components/Container";
 import {S} from "./Contact_Styles";
 import {useTranslation} from "react-i18next";
+import type {TFunction} from "i18next";
 
-const validationSchema = Yup.object({
-  user_name: Yup.string().required("Name is required"),
+const validationSchema = (t: TFunction) => Yup.object({
+  user_name: Yup.string().required(t("nameRequired", "Name is required")),
   email: Yup.string()
-    .email("Invalid email address")
-    .required("Email is required"),
-  subject: Yup.string().required("Subject is required"),
-  message: Yup.string().required("Message is required"),
+    .email(t("invalidEmail", "Invalid email address"))
+    .required(t("emailRequired", "Email is required")),
+  subject: Yup.string().required(t("subjectRequired", "Subject is required")),
+  message: Yup.string().required(t("messageRequired", "Message is required")),
 });
 
 export const Contacts: React.FC = () => {
@@ -57,7 +58,7 @@ export const Contacts: React.FC = () => {
             subject: "",
             message: "",
           }}
-          validationSchema={validationSchema}
+          validationSchema={validationSchema(t)}
           onSubmit={sendEmail}
         >
           {({ isSubmitting, handleSubmit }) => (
