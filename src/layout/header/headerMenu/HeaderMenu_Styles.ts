@@ -32,7 +32,7 @@ const NavLink = styled(Link)`
   color: transparent;
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
 
   &::before {
