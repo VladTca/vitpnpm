@@ -1,12 +1,12 @@
 import socialImg from "../../assets/images/social-network.png";
 import timerImg from "../../assets/images/timer.jpg";
 import counterImg from "../../assets/images/counter.png";
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
 
 const useWorkData = () => {
   const { t } = useTranslation();
 
-  const worksData = [
+  return [
     {
       title: t("counter"),
       text: t("counterDescription"),
@@ -63,7 +63,6 @@ const useWorkData = () => {
       id: 6,
     },
   ];
-  return worksData;
 };
 
 export default useWorkData;
