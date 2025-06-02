@@ -44,6 +44,7 @@ const StyledSelect = styled.select`
   border-radius: 5px;
   border: 1px solid ${theme.colors.accent};
   font-size: 14px;
+  color: #7572D5;
 
   @media ${theme.media.tablet} {
     margin-right: 80px;
