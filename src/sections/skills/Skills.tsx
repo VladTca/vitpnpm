@@ -6,8 +6,6 @@ import {S} from "./Skills_Styles";
 import {Fade} from "react-awesome-reveal";
 
 
-//TODO: уменьшить задержку, выровнять картинки, плавнее скролл
-
 const skillData = [
   {
     iconId: "html",
@@ -124,7 +122,8 @@ export const Skills = () => {
       <Container>
         <SectionTitle>My Skills</SectionTitle>
         <FlexWrapper wrap={"wrap"} justify={"space-between"}>
-          <Fade cascade={true} damping={0.1}>
+          <Fade cascade={true} damping={0.1} triggerOnce={true} fraction={0.1}
+          >
             {skillData.map((s, index) => {
               return (
                 <Skill

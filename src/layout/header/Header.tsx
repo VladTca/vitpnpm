@@ -5,10 +5,12 @@ import {DesktopMenu} from "./headerMenu/desktopmenu/DesktopMenu";
 import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
 import {S} from "./Header_Styles";
 import React from "react";
+import {useNavigate} from "react-router";
 
 export const Header: React.FC = () => {
   const [width, setWidth] = React.useState(window.innerWidth);
   const breakpoint = 768;
+  const navigate = useNavigate();
 
   React.useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
@@ -16,11 +18,18 @@ export const Header: React.FC = () => {
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
+  const handleLogoClick = () => {
+    navigate("/slogan");
+  };
+
+
   return (
     <S.Header>
       <Container>
         <FlexWrapper justify={"space-between"} align={"center"}>
-          <Logo />
+          <div onClick={handleLogoClick} style={{ cursor: "pointer" }}>
+            <Logo />
+          </div>
           {width < breakpoint ? <MobileMenu /> : <DesktopMenu />}
         </FlexWrapper>
       </Container>

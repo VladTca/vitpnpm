@@ -17,8 +17,8 @@ function ToSlogan() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowSlogan(false);
-            navigate("/main");
-        }, 5000);
+            navigate("/");
+        }, 3000);
 
         return () => clearTimeout(timer);
     }, [navigate]);
@@ -27,12 +27,12 @@ function ToSlogan() {
 }
 
 const routes = [
-    { path: "/", element: <ToSlogan /> },
+    { path: "/", element: <Main /> },
     { path: "skills", element: <Skills /> },
     { path: "works", element: <Works /> },
     { path: "testimony", element: <Testimony /> },
     { path: "contacts", element: <Contacts /> },
-    { path: "main", element: <Main /> },
+    { path: "slogan", element: <ToSlogan /> },
 ];
 
 function App() {
