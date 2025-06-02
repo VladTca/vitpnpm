@@ -1,9 +1,12 @@
 import React from "react";
 import {S} from "../HeaderMenu_Styles";
-import {navLinks} from "../../../navLinks.ts";
+import {useNavLinks} from "../../../navLinks";
 
 
 export const Menu: React.FC = () => {
+  const navLinks = useNavLinks();
+
+
   return (
     <ul>
       {navLinks.map((item, index) => {

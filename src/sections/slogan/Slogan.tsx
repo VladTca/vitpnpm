@@ -5,9 +5,11 @@ import {Button} from "../../components/Button";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 export const Slogan: React.FC = () => {
     const [count, setCount] = useState(5);
+    const { t } = useTranslation();
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -21,10 +23,10 @@ export const Slogan: React.FC = () => {
         <StyledSlogan id="slogan">
             <CenteredContainer>
                 <FlexWrapper direction="column" align="center" justify="center">
-                    <SectionTitle>I Am Currently Available for Employment</SectionTitle>
-                    <p>Redirecting in {count} seconds...</p>
+                    <SectionTitle>{t('slogan')}</SectionTitle>
+                    <p>{t('redirect')} {count} {t('seconds')}</p>
                     <Link to="/contacts">
-                        <Button>Hire me</Button>
+                        <Button>{t('hire')}</Button>
                     </Link>
                 </FlexWrapper>
             </CenteredContainer>

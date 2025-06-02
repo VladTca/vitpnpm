@@ -6,32 +6,35 @@ import {S} from "./Main_Styles";
 import Tilt from "react-parallax-tilt";
 import {Particl} from "../../components/particl/Particl.tsx";
 import React from "react";
+import {useTranslation} from "react-i18next";
 
 
 export const Main: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <S.Main id={"home"}>
       <Container>
         <Particl />
         <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"}>
           <div>
-            <S.SmallText>Hi There</S.SmallText>
+            <S.SmallText>{t('welcome')}</S.SmallText>
             <S.Name>
-              I am <span>Vladimir Tcaciuc</span>
+              {t('iam')} <span>Vladimir Tcaciuc</span>
             </S.Name>
             <S.MainTitle>
-              <p>A Web Developer. </p>
+              <p>Full Stack Developer.</p>
               <Typewriter
                 options={{
                   strings: [
-                    "Full Stack Developer.",
-                    "Full Stack Engineer.",
-                    "Software Developer.",
-                    "JAVA Developer.",
-                    "A Backend Developer.",
-                    "Web Developer.",
-                    "Frontend Developer.",
-                    "React Developer.",
+                    t('spec1'),
+                    t('spec2'),
+                    t('spec3'),
+                    t('spec4'),
+                    t('spec5'),
+                    t('spec6'),
+                    t('spec7'),
+                    t('spec8'),
                   ],
                   autoStart: true,
                   loop: true,

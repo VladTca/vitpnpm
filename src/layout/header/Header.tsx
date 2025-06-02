@@ -6,6 +6,7 @@ import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
 import {S} from "./Header_Styles";
 import React from "react";
 import {useNavigate} from "react-router-dom";
+import LanguageSwitcher from "../../components/languageSwitch/LanguageSwitcher.tsx";
 
 export const Header: React.FC = () => {
   const [width, setWidth] = React.useState(window.innerWidth);
@@ -31,6 +32,7 @@ export const Header: React.FC = () => {
             <Logo />
           </div>
           {width < breakpoint ? <MobileMenu /> : <DesktopMenu />}
+          <LanguageSwitcher/>
         </FlexWrapper>
       </Container>
     </S.Header>
