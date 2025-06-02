@@ -1,6 +1,6 @@
 import React from "react";
 import {S} from "../HeaderMenu_Styles";
-import {useNavLinks} from "../../../navLinks";
+import {useNavLinks} from "../../../useNavLinks";
 
 
 export const Menu: React.FC = () => {

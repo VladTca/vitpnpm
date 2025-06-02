@@ -2,6 +2,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import {S} from "./Slider_Styles";
 import "./../../styles/Slider.css";
+import {useTranslation} from "react-i18next";
 
 type SlidePropsType = {
   text: string;
@@ -16,21 +17,31 @@ const Slide = (props: SlidePropsType) => {
     </S.Slide>
   );
 };
-const SLIDE_TEXTS =
+
+const useSlides = () => {
+  const { t } = useTranslation();
+  const SLIDE_TEXTS =
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
+  return  [
+      { id: 1, text: SLIDE_TEXTS, userName: t('userIvan') },
+      { id: 2, text: SLIDE_TEXTS, userName: t('userPetr') },
+      { id: 3, text: SLIDE_TEXTS, userName: t("userIgor") },
+  ];
+};
 
-const slides = [
-  { id: 1, text: SLIDE_TEXTS, userName: "ivan ivanow" },
-  { id: 2, text: SLIDE_TEXTS, userName: "petr petrov" },
-  { id: 3, text: SLIDE_TEXTS, userName: "igor igorev" },
-];
 
-const items = slides.map(({ id, text, userName }) => (
-  <Slide key={id} text={text} userName={userName} />
-));
 
-export const Slider = () => (
-  <S.Slider>
-    <AliceCarousel mouseTracking items={items} />
-  </S.Slider>
-);
+export const Slider = () => {
+    const slides = useSlides();
+
+    const items = slides.map(({ id, text, userName }) => (
+        <Slide key={id} text={text} userName={userName} />
+    ));
+
+    return (
+        <S.Slider>
+            <AliceCarousel mouseTracking items={items} />
+        </S.Slider>
+    );
+};
+

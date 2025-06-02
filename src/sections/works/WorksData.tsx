@@ -1,11 +1,16 @@
 import socialImg from "../../assets/images/social-network.png";
 import timerImg from "../../assets/images/timer.jpg";
 import counterImg from "../../assets/images/counter.png";
+import {useTranslation} from "react-i18next";
 
-export const worksData = [
+
+const useWorkData= () => {
+    const {t} = useTranslation();
+
+const worksData = [
     {
-        title: "Counter",
-        text: "Counter with advanced option.",
+        title: t('counter'),
+        text: t('counterDescription'),
         src: counterImg,
         type: "spa",
         dhref:"https://vladtca.github.io/advanced_counter2/",
@@ -53,3 +58,8 @@ export const worksData = [
         id: 6,
     },
 ];
+    return worksData;
+}
+
+
+export default useWorkData;

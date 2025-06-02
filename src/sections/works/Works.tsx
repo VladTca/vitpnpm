@@ -6,10 +6,15 @@ import {Work} from "./work/Work";
 import {Container} from "../../components/Container";
 import {S} from "./Works_Styles";
 import {AnimatePresence, motion} from "framer-motion";
-import {worksData} from "./WorksData.tsx";
-import {tabsItems} from "./TabsItems.tsx";
+import useTabItems from "./TabsItems.tsx";
+import {useTranslation} from "react-i18next";
+import useWorkData from "./WorksData.tsx";
+
 
 export const Works: React.FC = () => {
+  const { t } = useTranslation();
+  const worksData = useWorkData();
+  const tabsItems = useTabItems();
   const [currentFilterStatus, setCurrentFilterStatus] = React.useState("all");
   let filteredWorks = worksData;
 
@@ -30,7 +35,7 @@ export const Works: React.FC = () => {
   return (
     <S.Works id={"works"}>
       <Container>
-        <SectionTitle>My Projects</SectionTitle>
+        <SectionTitle>{t('myprojects')}</SectionTitle>
 
         <TabMenu
           tabsItems={tabsItems}

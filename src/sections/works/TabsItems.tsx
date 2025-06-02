@@ -1,23 +1,31 @@
 import type {TabStatusType} from "./tabMenu/TabMenu.tsx";
+import {useTranslation} from "react-i18next";
 
-export const tabsItems: Array<{
+
+const useTabItems = () => {
+  const {t} = useTranslation();
+const tabsItems: Array<{
     status: TabStatusType;
     title: string;
 }> = [
     {
-        title: "All",
+        title: t("all"),
         status: "all",
     },
     {
-        title: "Landing Page",
+        title: t('landing'),
         status: "landing",
     },
     {
-        title: "React",
+        title: t('react'),
         status: "react",
     },
     {
-        title: "Spa",
+        title: t('spa'),
         status: "spa",
     },
 ];
+  return tabsItems;
+}
+
+export default useTabItems;

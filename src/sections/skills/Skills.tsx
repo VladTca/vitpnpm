@@ -4,16 +4,16 @@ import {Skill} from "./skill/Skill";
 import {Container} from "../../components/Container";
 import {S} from "./Skills_Styles";
 import {Fade} from "react-awesome-reveal";
-import {skillData} from "./SkillData.ts";
 import {useTranslation} from "react-i18next";
-
+import {useSkillData} from "./useSkillData";
 
 export const Skills = () => {
   const { t } = useTranslation();
+  const skillData = useSkillData();
   return (
     <S.Skills id={"skills"}>
       <Container>
-        <SectionTitle>{t('myprojects')}</SectionTitle>
+        <SectionTitle>{t('myskills')}</SectionTitle>
         <FlexWrapper wrap={"wrap"} justify={"space-between"}>
           <Fade cascade={true} damping={0.1} triggerOnce={true} fraction={0.1}
           >
