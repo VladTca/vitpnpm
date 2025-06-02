@@ -18,7 +18,7 @@ function ToSlogan() {
         const timer = setTimeout(() => {
             setShowSlogan(false);
             navigate("/");
-        }, 3000);
+        }, 5000);
 
         return () => clearTimeout(timer);
     }, [navigate]);

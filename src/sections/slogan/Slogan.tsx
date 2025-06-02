@@ -7,7 +7,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {Link} from "react-router-dom";
 
 export const Slogan: React.FC = () => {
-    const [count, setCount] = useState(3);
+    const [count, setCount] = useState(5);
 
     useEffect(() => {
         const timer = setInterval(() => {

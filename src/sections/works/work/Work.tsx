@@ -1,12 +1,14 @@
 import React from "react";
-import { Link } from "../../../components/Link";
-import { Button } from "../../../components/Button";
-import { S } from "../Works_Styles";
+import {Link} from "../../../components/Link";
+import {Button} from "../../../components/Button";
+import {S} from "../Works_Styles";
 
 type WorkPropsType = {
   title: string;
   text: string;
   src: string;
+  dhref?: string;
+  chref?: string;
 };
 
 export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
@@ -14,15 +16,21 @@ export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
     <S.Work>
       <S.ImageWrapper>
         <S.Image src={props.src} alt="" />
-        <Button>VIEW PROJECT</Button>
+
+        <Button>
+            <Link active href={props.dhref} target="_blank">
+            VIEW PROJECT
+
+          </Link>
+            </Button>
       </S.ImageWrapper>
       <S.Description>
         <S.Title>{props.title}</S.Title>
         <S.Text>{props.text}</S.Text>
-        <Link active href={"#"}>
+        <Link active href={props.dhref} target="_blank">
           demo
         </Link>
-        <Link href={"#"}>code</Link>
+        <Link href={props.chref} target="_blank">code</Link>
       </S.Description>
     </S.Work>
   );
