@@ -1,6 +1,8 @@
 import React from "react";
 import i18n from "i18next";
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
+import styled from "styled-components";
+import {theme} from "../../styles/Theme";
 
 const languages = [
   { code: "en", label: "English" },
@@ -23,23 +25,33 @@ const LanguageSwitcher: React.FC = () => {
 
   return (
     <div>
-      <select
+      <StyledSelect
         value={i18nextInstance.language}
         onChange={handleChangeLanguage}
-        style={{
-          padding: "5px 10px",
-          borderRadius: "5px",
-          border: "1px solid #ccc",
-        }}
       >
         {languages.map((language) => (
           <option key={language.code} value={language.code}>
             {language.label}
           </option>
         ))}
-      </select>
+      </StyledSelect>
     </div>
   );
 };
+
+const StyledSelect = styled.select`
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid ${theme.colors.accent};
+  font-size: 14px;
+
+  @media ${theme.media.tablet} {
+    margin-right: 80px;
+  }
+
+  @media ${theme.media.mobile} {
+    margin-right: 80px;
+  }
+`;
 
 export default LanguageSwitcher;
