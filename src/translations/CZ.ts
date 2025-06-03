@@ -72,4 +72,7 @@ export const CZ = {
   emailRequired: "E-mail je povinný",
   subjectRequired: "Předmět je povinný",
   messageRequired: "Zpráva je povinná",
+  successsend: "Zpráva byla úspěšně odeslána!",
+  failedsend: "Odeslání e-mailu selhalo:",
+  failedMessage: "Nepodařilo se odeslat zprávu. Zkuste to prosím znovu."
 };

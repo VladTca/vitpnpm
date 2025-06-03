@@ -72,4 +72,7 @@ export const RO = {
   emailRequired: "Email-ul este obligatoriu",
   subjectRequired: "Subiectul este obligatoriu",
   messageRequired: "Mesajul este obligatoriu",
+  successsend: "Mesaj trimis cu succes!",
+  failedsend: "Trimiterea e-mailului a eșuat:",
+  failedMessage: "Nu s-a putut trimite mesajul. Vă rugăm să încercați din nou."
 };

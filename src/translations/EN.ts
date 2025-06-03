@@ -73,4 +73,7 @@ export const EN = {
   emailRequired: "Email is required",
   subjectRequired: "Subject is required",
   messageRequired: "Message is required",
+  successsend: "Message sent successfully!",
+  failedsend: "Email send failed:",
+  failedMessage:"Failed to send the message. Please try again."
 };

@@ -72,4 +72,7 @@ export const UA = {
   emailRequired: "Email обов'язковий",
   subjectRequired: "Тема обов'язкова",
   messageRequired: "Повідомлення обов'язкове",
+  successsend: "Повідомлення успішно надіслано!",
+  failedsend: "Не вдалося надіслати електронний лист:",
+  failedMessage: "Повідомлення не вдалося надіслати. Будь ласка, спробуйте ще раз."
 };

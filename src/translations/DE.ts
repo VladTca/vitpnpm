@@ -72,4 +72,7 @@ export const DE = {
   emailRequired: "E-Mail ist erforderlich",
   subjectRequired: "Betreff ist erforderlich",
   messageRequired: "Nachricht ist erforderlich",
+  successsend: "Nachricht erfolgreich gesendet!",
+  failedsend: "E-Mail-Versand fehlgeschlagen:",
+  failedMessage: "Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
 };

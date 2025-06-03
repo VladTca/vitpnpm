@@ -37,11 +37,11 @@ export const Contacts: React.FC = () => {
         values,
         { publicKey: import.meta.env.VITE_KEY_EMAIL_EMAILJS || "#" },
       );
-      alert("Message sent successfully!");
+      alert(t('successsend'));
       resetForm();
     } catch (error) {
-      console.error("Email send failed:", error);
-      alert("Failed to send the message. Please try again.");
+      console.error(t('failedsend'), error);
+      alert(t('failedMessage'));
     }
   };
 

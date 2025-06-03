@@ -72,4 +72,7 @@ export const RU = {
   emailRequired: "Email обязателен",
   subjectRequired: "Тема обязательна",
   messageRequired: "Сообщение обязательно",
+  successsend: "Сообщение успешно отправлено!",
+  failedsend: "Не удалось отправить электронное письмо:",
+  failedMessage: "Не удалось отправить сообщение. Пожалуйста, попробуйте снова."
 };
