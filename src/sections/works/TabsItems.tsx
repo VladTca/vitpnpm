@@ -1,5 +1,5 @@
-import type { TabStatusType } from "./tabMenu/TabMenu.tsx";
-import { useTranslation } from "react-i18next";
+import type {TabStatusType} from "./tabMenu/TabMenu.tsx";
+import {useTranslation} from "react-i18next";
 
 const useTabItems = () => {
   const { t } = useTranslation();
@@ -22,6 +22,10 @@ const useTabItems = () => {
     {
       title: t("spa"),
       status: "spa",
+    },
+    {
+      title:"design",
+      status: "design",
     },
   ];
   return tabsItems;

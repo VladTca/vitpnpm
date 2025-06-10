@@ -2,6 +2,8 @@ import socialImg from "../../assets/images/social-network.png";
 import timerImg from "../../assets/images/timer.jpg";
 import counterImg from "../../assets/images/counter.png";
 import {useTranslation} from "react-i18next";
+import rover from "../../assets/images/rover.png";
+
 
 const useWorkData = () => {
   const { t } = useTranslation();
@@ -18,12 +20,13 @@ const useWorkData = () => {
       id: 1,
     },
     {
-      title: "Timer",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
-      src: timerImg,
-      type: "react",
+      title: "RoverShop",
+      text: "The design of the store and the sale and repair of bicycles.",
+      src: rover,
+      type: "design",
+      dhref: "https://www.figma.com/design/gAwnE3Xeq8FZSJz7RskNE9/Rover?node-id=0-1&t=GZyvK3teab1VmhCH-1",
       chref:
-        "https://github.com/VladTca/advanced_counter2/tree/60528e283ca0b048202e16ce07b8ec0f1abe1c84",
+        "https://www.figma.com/design/gAwnE3Xeq8FZSJz7RskNE9/Rover?node-id=0-1&t=GZyvK3teab1VmhCH-1",
       id: 2,
     },
     {

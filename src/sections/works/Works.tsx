@@ -26,6 +26,9 @@ export const Works: React.FC = () => {
   if (currentFilterStatus === "spa") {
     filteredWorks = worksData.filter((w) => w.type === "spa");
   }
+  if (currentFilterStatus === "design") {
+    filteredWorks = worksData.filter((w) => w.type === "design");
+  }
 
   function changeFilterStatus(value: TabStatusType) {
     setCurrentFilterStatus(value);

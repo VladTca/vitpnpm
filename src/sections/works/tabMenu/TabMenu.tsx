@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import { Link } from "../../../components/Link";
+import {Link} from "../../../components/Link";
 
-export type TabStatusType = "all" | "landing" | "react" | "spa";
+export type TabStatusType = "all" | "landing" | "react" | "spa" | "design";
 
 type TabMenuPropsType = {
   tabsItems: Array<{
