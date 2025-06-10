@@ -30,12 +30,13 @@ const useWorkData = () => {
       id: 2,
     },
     {
-      title: "Social Network",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      title: "Little Lemon Restaurant",
+      text: "The site of the restaurant written using the React, Redux, Typescript, etc. ",
       src: socialImg,
-      type: "spa",
+      type: "react",
+      dhref: "https://vladtca.github.io/little_lr/",
       chref:
-        "https://github.com/VladTca/advanced_counter2/tree/60528e283ca0b048202e16ce07b8ec0f1abe1c84",
+        "https://github.com/VladTca/little_lr/tree/a1f9f0b76250dd1a21ffbee99d577fcbdefa510b",
       id: 3,
     },
     {
