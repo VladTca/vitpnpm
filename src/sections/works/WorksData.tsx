@@ -3,6 +3,7 @@ import timerImg from "../../assets/images/timer.jpg";
 import counterImg from "../../assets/images/counter.png";
 import {useTranslation} from "react-i18next";
 import rover from "../../assets/images/rover.png";
+import llr from "../../assets/images/llr.png"
 
 
 const useWorkData = () => {
@@ -10,13 +11,13 @@ const useWorkData = () => {
 
   return [
     {
-      title: t("counter"),
-      text: t("counterDescription"),
-      src: counterImg,
-      type: "spa",
-      dhref: "https://vladtca.github.io/advanced_counter2/",
+      title: "Little Lemon Restaurant",
+      text: "The site of the restaurant written using the React, Redux, Typescript, etc. ",
+      src: llr,
+      type: "react",
+      dhref: "https://vladtca.github.io/little_lr/",
       chref:
-        "https://github.com/VladTca/advanced_counter2/tree/60528e283ca0b048202e16ce07b8ec0f1abe1c84",
+          "https://github.com/VladTca/little_lr/tree/a1f9f0b76250dd1a21ffbee99d577fcbdefa510b",
       id: 1,
     },
     {
@@ -30,13 +31,13 @@ const useWorkData = () => {
       id: 2,
     },
     {
-      title: "Little Lemon Restaurant",
-      text: "The site of the restaurant written using the React, Redux, Typescript, etc. ",
-      src: socialImg,
-      type: "react",
-      dhref: "https://vladtca.github.io/little_lr/",
+      title: t("counter"),
+      text: t("counterDescription"),
+      src: counterImg,
+      type: "spa",
+      dhref: "https://vladtca.github.io/advanced_counter2/",
       chref:
-        "https://github.com/VladTca/little_lr/tree/a1f9f0b76250dd1a21ffbee99d577fcbdefa510b",
+          "https://github.com/VladTca/advanced_counter2/tree/60528e283ca0b048202e16ce07b8ec0f1abe1c84",
       id: 3,
     },
     {
